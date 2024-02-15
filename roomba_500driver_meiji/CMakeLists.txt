@@ -12,6 +12,21 @@ endif()
 find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
+set(msg_files
+  "msg/Button.msg"
+  "msg/LeftRight16.msg"
+  "msg/Roomba500State.msg"
+  "msg/Cliff.msg"
+  "msg/LeftRightU16.msg"
+  "msg/RoombaCtrl.msg"
+  "msg/IrOpcode.msg"
+  "msg/LightBumper.msg"
+  "msg/Song.msg"
+  "msg/LeftRight.msg"
+  "msg/MotorOvercurrent.msg"
+  "msg/Wheeldrop.msg"
+)
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Button.msg"
   "msg/LeftRight16.msg"
